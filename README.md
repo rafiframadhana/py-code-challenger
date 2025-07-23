@@ -1,4 +1,4 @@
-# PyCodeChallenger 🚀
+# PyCodeChallenger 🐍
 
 **PyCodeChallenger** is a modern, interactive web application designed to help me and fellow Python developers master the fundamentals of Python through hands-on coding challenges. Built with **React**, **TypeScript**, and **Tailwind CSS**, this platform offers a smooth and responsive learning experience with Python code execution powered by **Pyodide**. It's **completely free**, requires **no sign-up**, and is perfect for practicing Python anytime, anywhere.
 
