@@ -27,7 +27,7 @@ export default function Footer({ isDarkMode }: FooterProps) {
       <div className="max-w-7xl mx-auto">
         <div className="text-center space-y-2">
           {/* Developer Links */}
-          <div className="flex items-center justify-center space-x-4">
+          <div className="flex items-center justify-center sm:space-x-4">
             {/* JSCodeChallenger Link */}
             <a
               href="https://jscodechallenger.netlify.app/"
