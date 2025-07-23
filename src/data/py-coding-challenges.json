@@ -1,0 +1,1674 @@
+{
+  "levels": {
+    "Beginner": {
+      "Lists": [
+        {
+          "id": "list-1",
+          "title": "Reverse a List",
+          "description": "Write a function that takes a list and returns a new list with the elements in reverse order. Do not modify the original list.",
+          "hint": "You can use slicing with [::-1] or iterate through the list backwards.",
+          "starterCode": "def reverse_list(lst):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "[1, 2, 3, 4, 5]", "expected": [5, 4, 3, 2, 1], "description": "Basic number list" },
+            { "input": "['a', 'b', 'c']", "expected": ["c", "b", "a"], "description": "String list" },
+            { "input": "[]", "expected": [], "description": "Empty list" },
+            { "input": "[42]", "expected": [42], "description": "Single element" }
+          ]
+        },
+        {
+          "id": "list-2",
+          "title": "Find Maximum Value",
+          "description": "Write a function that finds and returns the maximum value in a list of numbers.",
+          "hint": "You can use the built-in max() function or iterate through the list keeping track of the current maximum.",
+          "starterCode": "def find_max(lst):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "[1, 5, 3, 9, 2]", "expected": 9, "description": "Positive numbers" },
+            { "input": "[-1, -5, -3, -2]", "expected": -1, "description": "Negative numbers" },
+            { "input": "[42]", "expected": 42, "description": "Single element" },
+            { "input": "[0, 0, 0]", "expected": 0, "description": "All zeros" }
+          ]
+        },
+        {
+          "id": "list-3",
+          "title": "Sum List Elements",
+          "description": "Write a function that calculates and returns the sum of all elements in a list of numbers.",
+          "hint": "Use a for loop or the built-in sum() function to add up all the elements.",
+          "starterCode": "def sum_list(lst):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "[1, 2, 3, 4, 5]", "expected": 15, "description": "Positive numbers" },
+            { "input": "[-1, -2, 3, 4]", "expected": 4, "description": "Mixed positive and negative" },
+            { "input": "[]", "expected": 0, "description": "Empty list" },
+            { "input": "[0, 0, 0]", "expected": 0, "description": "All zeros" }
+          ]
+        },
+        {
+          "id": "list-4",
+          "title": "Find Element Index",
+          "description": "Write a function that finds the index of a specific element in a list. Return -1 if not found.",
+          "hint": "Use the index() method with try/except or iterate through the list with enumerate().",
+          "starterCode": "def find_index(lst, element):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "[1, 2, 3, 4, 5], 3", "expected": 2, "description": "Element found" },
+            { "input": "['a', 'b', 'c'], 'b'", "expected": 1, "description": "String element found" },
+            { "input": "[1, 2, 3], 5", "expected": -1, "description": "Element not found" },
+            { "input": "[], 1", "expected": -1, "description": "Empty list" }
+          ]
+        },
+        {
+          "id": "list-5",
+          "title": "Remove Duplicates",
+          "description": "Write a function that removes duplicate elements from a list and returns a new list with unique elements only, preserving order.",
+          "hint": "You can use a set to track seen elements or use list comprehension with a condition.",
+          "starterCode": "def remove_duplicates(lst):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "[1, 2, 2, 3, 3, 3, 4]", "expected": [1, 2, 3, 4], "description": "Number duplicates" },
+            { "input": "['a', 'b', 'a', 'c', 'b']", "expected": ["a", "b", "c"], "description": "String duplicates" },
+            { "input": "[1, 2, 3]", "expected": [1, 2, 3], "description": "No duplicates" },
+            { "input": "[]", "expected": [], "description": "Empty list" }
+          ]
+        },
+        {
+          "id": "list-6",
+          "title": "List Contains Element",
+          "description": "Write a function that checks if a list contains a specific element. Return True if found, False otherwise.",
+          "hint": "Use the 'in' operator or iterate through the list to check each element.",
+          "starterCode": "def contains_element(lst, element):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "[1, 2, 3, 4, 5], 3", "expected": true, "description": "Element exists" },
+            { "input": "['apple', 'banana', 'orange'], 'banana'", "expected": true, "description": "String element exists" },
+            { "input": "[1, 2, 3], 5", "expected": false, "description": "Element doesn't exist" },
+            { "input": "[], 1", "expected": false, "description": "Empty list" }
+          ]
+        },
+        {
+          "id": "list-7",
+          "title": "First and Last Elements",
+          "description": "Write a function that returns a list containing the first and last elements of the input list.",
+          "hint": "Access elements using index 0 for first and -1 for last.",
+          "starterCode": "def first_and_last(lst):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "[1, 2, 3, 4, 5]", "expected": [1, 5], "description": "Multiple elements" },
+            { "input": "['a', 'b', 'c']", "expected": ["a", "c"], "description": "String list" },
+            { "input": "[42]", "expected": [42, 42], "description": "Single element" },
+            { "input": "[10, 20]", "expected": [10, 20], "description": "Two elements" }
+          ]
+        },
+        {
+          "id": "list-8",
+          "title": "List Length",
+          "description": "Write a function that returns the length of a list without using the built-in len() function.",
+          "hint": "Use a counter variable and iterate through the list until you reach the end.",
+          "starterCode": "def get_list_length(lst):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "[1, 2, 3, 4, 5]", "expected": 5, "description": "Five elements" },
+            { "input": "['a', 'b']", "expected": 2, "description": "Two elements" },
+            { "input": "[]", "expected": 0, "description": "Empty list" },
+            { "input": "[null, false, 0, '']", "expected": 4, "description": "Falsy elements" }
+          ]
+        },
+        {
+          "id": "list-9",
+          "title": "Count Even Numbers",
+          "description": "Write a function that counts how many even numbers are in a list.",
+          "hint": "Use a counter variable and check each number with the modulo operator (%).",
+          "starterCode": "def count_evens(lst):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "[1, 2, 3, 4, 5, 6]", "expected": 3, "description": "Three even numbers: 2, 4, 6" },
+            { "input": "[1, 3, 5]", "expected": 0, "description": "No even numbers" },
+            { "input": "[2, 4, 6, 8]", "expected": 4, "description": "All even numbers" },
+            { "input": "[]", "expected": 0, "description": "Empty list" }
+          ]
+        },
+        {
+          "id": "list-10",
+          "title": "List Average",
+          "description": "Write a function that calculates the average of numbers in a list.",
+          "hint": "Sum all elements and divide by the list length. Handle empty lists by returning 0.",
+          "starterCode": "def list_average(lst):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "[1, 2, 3, 4, 5]", "expected": 3.0, "description": "Average of 1-5 is 3" },
+            { "input": "[10, 20, 30]", "expected": 20.0, "description": "Average of 10, 20, 30" },
+            { "input": "[5]", "expected": 5.0, "description": "Single element" },
+            { "input": "[]", "expected": 0, "description": "Empty list" }
+          ]
+        },
+        {
+          "id": "list-11",
+          "title": "Second Largest Element",
+          "description": "Write a function that finds the second largest element in a list of numbers.",
+          "hint": "Keep track of the largest and second largest values while iterating through the list.",
+          "starterCode": "def second_largest(lst):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "[1, 5, 3, 9, 2]", "expected": 5, "description": "Second largest after 9" },
+            { "input": "[10, 10, 5]", "expected": 5, "description": "Handle duplicates" },
+            { "input": "[1, 2]", "expected": 1, "description": "Two elements" },
+            { "input": "[5, 5, 5]", "expected": null, "description": "All same numbers" }
+          ]
+        },
+        {
+          "id": "list-12",
+          "title": "Merge Two Lists",
+          "description": "Write a function that merges two lists into one list alternating elements.",
+          "hint": "Use a loop to take elements from both lists alternately, then add any remaining elements.",
+          "starterCode": "def merge_alternating(lst1, lst2):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "[1, 2, 3], [4, 5, 6]", "expected": [1, 4, 2, 5, 3, 6], "description": "Equal length lists" },
+            { "input": "[1, 2], [3, 4, 5, 6]", "expected": [1, 3, 2, 4, 5, 6], "description": "First list shorter" },
+            { "input": "[1, 2, 3], [4]", "expected": [1, 4, 2, 3], "description": "Second list shorter" },
+            { "input": "[], [1, 2]", "expected": [1, 2], "description": "First list empty" }
+          ]
+        },
+        {
+          "id": "list-13",
+          "title": "List Chunk",
+          "description": "Write a function that splits a list into smaller lists of a specified size.",
+          "hint": "Use list slicing with a step to create chunks of the given size.",
+          "starterCode": "def chunk_list(lst, size):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "[1, 2, 3, 4, 5, 6], 2", "expected": [[1, 2], [3, 4], [5, 6]], "description": "Chunk by 2" },
+            { "input": "[1, 2, 3, 4, 5], 3", "expected": [[1, 2, 3], [4, 5]], "description": "Uneven chunks" },
+            { "input": "[1, 2], 5", "expected": [[1, 2]], "description": "Size larger than list" },
+            { "input": "[], 2", "expected": [], "description": "Empty list" }
+          ]
+        },
+        {
+          "id": "list-14",
+          "title": "Find Missing Number",
+          "description": "Write a function that finds the missing number in a list of consecutive integers from 1 to n+1.",
+          "hint": "Calculate the expected sum of 1 to n+1 and subtract the actual sum of the list.",
+          "starterCode": "def find_missing(lst):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "[1, 2, 4, 5]", "expected": 3, "description": "Missing 3 from 1-5" },
+            { "input": "[2, 3, 4, 5, 6]", "expected": 1, "description": "Missing 1 from 1-6" },
+            { "input": "[1, 2, 3, 5, 6, 7]", "expected": 4, "description": "Missing 4 from 1-7" },
+            { "input": "[1, 3]", "expected": 2, "description": "Missing 2 from 1-3" }
+          ]
+        },
+        {
+          "id": "list-15",
+          "title": "Flatten Nested List",
+          "description": "Write a function that flattens a nested list into a single-level list.",
+          "hint": "Use recursion to check if each element is a list, and if so, recursively flatten it.",
+          "starterCode": "def flatten_list(lst):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "[1, [2, 3], [4, [5, 6]]]", "expected": [1, 2, 3, 4, 5, 6], "description": "Flatten nested list" },
+            { "input": "[1, 2, 3]", "expected": [1, 2, 3], "description": "Already flat list" },
+            { "input": "[[1], [2], [3]]", "expected": [1, 2, 3], "description": "List of single-element lists" },
+            { "input": "[]", "expected": [], "description": "Empty list" }
+          ]
+        }
+      ],
+      "Loops": [
+        {
+          "id": "loop-1",
+          "title": "Count to N",
+          "description": "Write a function that takes a number n and returns a list containing all numbers from 1 to n (inclusive).",
+          "hint": "Use a for loop with range(1, n+1) and append each number to a list.",
+          "starterCode": "def count_to_n(n):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "5", "expected": [1, 2, 3, 4, 5], "description": "Count to 5" },
+            { "input": "1", "expected": [1], "description": "Count to 1" },
+            { "input": "0", "expected": [], "description": "Count to 0" },
+            { "input": "3", "expected": [1, 2, 3], "description": "Count to 3" }
+          ]
+        },
+        {
+          "id": "loop-2",
+          "title": "Even Numbers Only",
+          "description": "Write a function that takes a list and returns a new list containing only the even numbers.",
+          "hint": "Use the modulo operator (%) to check if a number is even. A number is even if number % 2 == 0.",
+          "starterCode": "def get_even_numbers(lst):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "[1, 2, 3, 4, 5, 6]", "expected": [2, 4, 6], "description": "Mixed numbers" },
+            { "input": "[1, 3, 5]", "expected": [], "description": "All odd numbers" },
+            { "input": "[2, 4, 6]", "expected": [2, 4, 6], "description": "All even numbers" },
+            { "input": "[]", "expected": [], "description": "Empty list" }
+          ]
+        },
+        {
+          "id": "loop-3",
+          "title": "Multiplication Table",
+          "description": "Write a function that generates a multiplication table for a given number up to 10.",
+          "hint": "Use a for loop from 1 to 10 and multiply each number by the input.",
+          "starterCode": "def multiplication_table(n):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "3", "expected": [3, 6, 9, 12, 15, 18, 21, 24, 27, 30], "description": "Table of 3" },
+            { "input": "5", "expected": [5, 10, 15, 20, 25, 30, 35, 40, 45, 50], "description": "Table of 5" },
+            { "input": "1", "expected": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "description": "Table of 1" },
+            { "input": "0", "expected": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "description": "Table of 0" }
+          ]
+        },
+        {
+          "id": "loop-4",
+          "title": "Count Vowels",
+          "description": "Write a function that counts the number of vowels (a, e, i, o, u) in a string.",
+          "hint": "Loop through each character and check if it's a vowel. Don't forget to handle both uppercase and lowercase.",
+          "starterCode": "def count_vowels(s):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "'hello'", "expected": 2, "description": "Two vowels" },
+            { "input": "'Python'", "expected": 1, "description": "Mixed case" },
+            { "input": "'xyz'", "expected": 0, "description": "No vowels" },
+            { "input": "'AEIOU'", "expected": 5, "description": "All vowels uppercase" }
+          ]
+        },
+        {
+          "id": "loop-5",
+          "title": "Sum of Squares",
+          "description": "Write a function that calculates the sum of squares of numbers from 1 to n.",
+          "hint": "Use a for loop and add the square of each number to a running total.",
+          "starterCode": "def sum_of_squares(n):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "3", "expected": 14, "description": "1² + 2² + 3² = 14" },
+            { "input": "4", "expected": 30, "description": "1² + 2² + 3² + 4² = 30" },
+            { "input": "1", "expected": 1, "description": "Just 1²" },
+            { "input": "0", "expected": 0, "description": "No numbers to square" }
+          ]
+        },
+        {
+          "id": "loop-6",
+          "title": "Reverse String",
+          "description": "Write a function that reverses a string using a loop (don't use built-in reverse methods).",
+          "hint": "Loop through the string from the end to the beginning and build a new string.",
+          "starterCode": "def reverse_string(s):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "'hello'", "expected": "olleh", "description": "Basic string" },
+            { "input": "'Python'", "expected": "nohtyP", "description": "Longer string" },
+            { "input": "'a'", "expected": "a", "description": "Single character" },
+            { "input": "''", "expected": "", "description": "Empty string" }
+          ]
+        },
+        {
+          "id": "loop-7",
+          "title": "Find Prime Numbers",
+          "description": "Write a function that finds all prime numbers up to a given number n.",
+          "hint": "A prime number is only divisible by 1 and itself. Check each number by testing divisibility.",
+          "starterCode": "def find_primes(n):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "10", "expected": [2, 3, 5, 7], "description": "Primes up to 10" },
+            { "input": "20", "expected": [2, 3, 5, 7, 11, 13, 17, 19], "description": "Primes up to 20" },
+            { "input": "2", "expected": [2], "description": "Just 2" },
+            { "input": "1", "expected": [], "description": "No primes up to 1" }
+          ]
+        },
+        {
+          "id": "loop-8",
+          "title": "Number Pattern",
+          "description": "Write a function that creates a pattern of numbers from 1 to n, then back down to 1.",
+          "hint": "Use two loops - one going up from 1 to n, and another going down from n-1 to 1.",
+          "starterCode": "def number_pattern(n):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "3", "expected": [1, 2, 3, 2, 1], "description": "Pattern for n=3" },
+            { "input": "4", "expected": [1, 2, 3, 4, 3, 2, 1], "description": "Pattern for n=4" },
+            { "input": "1", "expected": [1], "description": "Pattern for n=1" },
+            { "input": "2", "expected": [1, 2, 1], "description": "Pattern for n=2" }
+          ]
+        },
+        {
+          "id": "loop-9",
+          "title": "Sum of Even Numbers",
+          "description": "Write a function that calculates the sum of all even numbers from 1 to n.",
+          "hint": "Loop through numbers from 1 to n, check if each is even, and add to sum if it is.",
+          "starterCode": "def sum_evens(n):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "6", "expected": 12, "description": "2 + 4 + 6 = 12" },
+            { "input": "10", "expected": 30, "description": "2 + 4 + 6 + 8 + 10 = 30" },
+            { "input": "1", "expected": 0, "description": "No even numbers up to 1" },
+            { "input": "4", "expected": 6, "description": "2 + 4 = 6" }
+          ]
+        },
+        {
+          "id": "loop-10",
+          "title": "Count Digits",
+          "description": "Write a function that counts the number of digits in a positive integer.",
+          "hint": "Keep dividing the number by 10 until it becomes 0, counting each division.",
+          "starterCode": "def count_digits(n):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "123", "expected": 3, "description": "Three digits" },
+            { "input": "5", "expected": 1, "description": "Single digit" },
+            { "input": "1000", "expected": 4, "description": "Four digits" },
+            { "input": "99", "expected": 2, "description": "Two digits" }
+          ]
+        },
+        {
+          "id": "loop-11",
+          "title": "FizzBuzz List",
+          "description": "Write a function that returns a list of numbers from 1 to n, but replaces multiples of 3 with 'Fizz', multiples of 5 with 'Buzz', and multiples of both with 'FizzBuzz'.",
+          "hint": "Check if number is divisible by both 3 and 5 first, then check 3, then 5, otherwise use the number.",
+          "starterCode": "def fizz_buzz(n):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "15", "expected": [1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz", 11, "Fizz", 13, 14, "FizzBuzz"], "description": "FizzBuzz up to 15" },
+            { "input": "5", "expected": [1, 2, "Fizz", 4, "Buzz"], "description": "FizzBuzz up to 5" },
+            { "input": "3", "expected": [1, 2, "Fizz"], "description": "FizzBuzz up to 3" },
+            { "input": "1", "expected": [1], "description": "FizzBuzz up to 1" }
+          ]
+        },
+        {
+          "id": "loop-12",
+          "title": "Powers of Two",
+          "description": "Write a function that generates a list of powers of 2 up to a given number n.",
+          "hint": "Start with 1 and keep multiplying by 2 until you exceed n.",
+          "starterCode": "def powers_of_two(n):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "10", "expected": [1, 2, 4, 8], "description": "Powers of 2 up to 10" },
+            { "input": "20", "expected": [1, 2, 4, 8, 16], "description": "Powers of 2 up to 20" },
+            { "input": "1", "expected": [1], "description": "Just 1" },
+            { "input": "0", "expected": [], "description": "No powers of 2 up to 0" }
+          ]
+        },
+        {
+          "id": "loop-13",
+          "title": "Triangle Numbers",
+          "description": "Write a function that generates the first n triangle numbers (1, 3, 6, 10, 15...).",
+          "hint": "Triangle numbers follow the pattern: nth triangle number = 1+2+3+...+n.",
+          "starterCode": "def triangle_numbers(n):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "5", "expected": [1, 3, 6, 10, 15], "description": "First 5 triangle numbers" },
+            { "input": "3", "expected": [1, 3, 6], "description": "First 3 triangle numbers" },
+            { "input": "1", "expected": [1], "description": "First triangle number" },
+            { "input": "0", "expected": [], "description": "No triangle numbers" }
+          ]
+        },
+        {
+          "id": "loop-14",
+          "title": "Digital Root",
+          "description": "Write a function that calculates the digital root of a number (keep summing digits until you get a single digit).",
+          "hint": "Use nested loops: outer loop continues until single digit, inner loop sums the digits.",
+          "starterCode": "def digital_root(n):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "123", "expected": 6, "description": "1+2+3=6" },
+            { "input": "456", "expected": 6, "description": "4+5+6=15, 1+5=6" },
+            { "input": "999", "expected": 9, "description": "9+9+9=27, 2+7=9" },
+            { "input": "5", "expected": 5, "description": "Already single digit" }
+          ]
+        }
+      ],
+      "Strings": [
+        {
+          "id": "str-1",
+          "title": "String Length",
+          "description": "Write a function that returns the length of a string without using the built-in len() function.",
+          "hint": "Use a loop to count characters until you reach the end of the string.",
+          "starterCode": "def get_string_length(s):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "'hello'", "expected": 5, "description": "Five characters" },
+            { "input": "'Python'", "expected": 6, "description": "Six characters" },
+            { "input": "''", "expected": 0, "description": "Empty string" },
+            { "input": "'a'", "expected": 1, "description": "Single character" }
+          ]
+        },
+        {
+          "id": "str-2",
+          "title": "First Character",
+          "description": "Write a function that returns the first character of a string. Return empty string if input is empty.",
+          "hint": "Access the character at index 0, but check if the string is not empty first.",
+          "starterCode": "def first_character(s):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "'hello'", "expected": "h", "description": "First of 'hello'" },
+            { "input": "'Python'", "expected": "P", "description": "First of 'Python'" },
+            { "input": "''", "expected": "", "description": "Empty string" },
+            { "input": "'a'", "expected": "a", "description": "Single character" }
+          ]
+        },
+        {
+          "id": "str-3",
+          "title": "Capitalize First Letter",
+          "description": "Write a function that capitalizes the first letter of a string and makes the rest lowercase.",
+          "hint": "Use string slicing and the upper() and lower() methods.",
+          "starterCode": "def capitalize_first(s):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "'hello'", "expected": "Hello", "description": "Capitalize 'hello'" },
+            { "input": "'pYTHON'", "expected": "Python", "description": "Fix 'pYTHON'" },
+            { "input": "'a'", "expected": "A", "description": "Single character" },
+            { "input": "''", "expected": "", "description": "Empty string" }
+          ]
+        },
+        {
+          "id": "str-4",
+          "title": "Count Character",
+          "description": "Write a function that counts how many times a specific character appears in a string.",
+          "hint": "Loop through the string and increment a counter when you find the target character.",
+          "starterCode": "def count_character(s, char):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "'hello', 'l'", "expected": 2, "description": "Count 'l' in 'hello'" },
+            { "input": "'Python', 'y'", "expected": 1, "description": "Count 'y' in 'Python'" },
+            { "input": "'test', 'x'", "expected": 0, "description": "Character not found" },
+            { "input": "'aaa', 'a'", "expected": 3, "description": "All same character" }
+          ]
+        },
+        {
+          "id": "str-5",
+          "title": "Remove Spaces",
+          "description": "Write a function that removes all spaces from a string.",
+          "hint": "You can use replace() method or loop through and build a new string without spaces.",
+          "starterCode": "def remove_spaces(s):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "'hello world'", "expected": "helloworld", "description": "Remove single space" },
+            { "input": "'Py thon'", "expected": "Python", "description": "Remove space in middle" },
+            { "input": "'  test  '", "expected": "test", "description": "Remove leading and trailing spaces" },
+            { "input": "'nospaces'", "expected": "nospaces", "description": "No spaces to remove" }
+          ]
+        },
+        {
+          "id": "str-6",
+          "title": "Is Palindrome",
+          "description": "Write a function that checks if a string is a palindrome (reads the same forwards and backwards).",
+          "hint": "Compare the string with its reverse, or use two pointers from start and end moving inward.",
+          "starterCode": "def is_palindrome(s):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "'racecar'", "expected": true, "description": "Classic palindrome" },
+            { "input": "'hello'", "expected": false, "description": "Not a palindrome" },
+            { "input": "'a'", "expected": true, "description": "Single character" },
+            { "input": "'madam'", "expected": true, "description": "Another palindrome" }
+          ]
+        },
+        {
+          "id": "str-7",
+          "title": "Word Count",
+          "description": "Write a function that counts the number of words in a string (words are separated by spaces).",
+          "hint": "Split the string by spaces and count the resulting list length, or count the spaces plus one.",
+          "starterCode": "def word_count(s):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "'hello world'", "expected": 2, "description": "Two words" },
+            { "input": "'Python is awesome'", "expected": 3, "description": "Three words" },
+            { "input": "'hello'", "expected": 1, "description": "Single word" },
+            { "input": "''", "expected": 0, "description": "Empty string" }
+          ]
+        },
+        {
+          "id": "str-8",
+          "title": "Replace Character",
+          "description": "Write a function that replaces all occurrences of one character with another character in a string.",
+          "hint": "Loop through the string and build a new string, replacing the target character when found.",
+          "starterCode": "def replace_char(s, old_char, new_char):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "'hello world', 'l', 'x'", "expected": "hexxo worxd", "description": "Replace all 'l' with 'x'" },
+            { "input": "'banana', 'a', 'o'", "expected": "bonono", "description": "Replace all 'a' with 'o'" },
+            { "input": "'test', 'z', 'y'", "expected": "test", "description": "Character not found" },
+            { "input": "'aaa', 'a', 'b'", "expected": "bbb", "description": "Replace all same characters" }
+          ]
+        },
+        {
+          "id": "str-9",
+          "title": "String Contains",
+          "description": "Write a function that checks if a string contains a specific substring.",
+          "hint": "Use the 'in' operator or loop through the string checking for the substring at each position.",
+          "starterCode": "def string_contains(s, substring):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "'hello world', 'world'", "expected": true, "description": "Substring found" },
+            { "input": "'Python', 'thon'", "expected": true, "description": "Substring at end" },
+            { "input": "'hello', 'hi'", "expected": false, "description": "Substring not found" },
+            { "input": "'test', 'test'", "expected": true, "description": "Exact match" }
+          ]
+        },
+        {
+          "id": "str-10",
+          "title": "Repeat String",
+          "description": "Write a function that repeats a string a specified number of times.",
+          "hint": "Use a loop to concatenate the string to itself n times, or use string multiplication.",
+          "starterCode": "def repeat_string(s, times):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "'hello', 3", "expected": "hellohellohello", "description": "Repeat 3 times" },
+            { "input": "'a', 5", "expected": "aaaaa", "description": "Repeat single character" },
+            { "input": "'test', 1", "expected": "test", "description": "Repeat once" },
+            { "input": "'hello', 0", "expected": "", "description": "Repeat zero times" }
+          ]
+        },
+        {
+          "id": "str-11",
+          "title": "String to List",
+          "description": "Write a function that converts a string into a list of characters.",
+          "hint": "Loop through the string and append each character to a list, or use list() function.",
+          "starterCode": "def string_to_list(s):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "'hello'", "expected": ["h", "e", "l", "l", "o"], "description": "String to character list" },
+            { "input": "'abc'", "expected": ["a", "b", "c"], "description": "Three characters" },
+            { "input": "'a'", "expected": ["a"], "description": "Single character" },
+            { "input": "''", "expected": [], "description": "Empty string" }
+          ]
+        },
+        {
+          "id": "str-12",
+          "title": "Title Case",
+          "description": "Write a function that converts a string to title case (first letter of each word capitalized).",
+          "hint": "Split the string into words, capitalize each word, then join them back together.",
+          "starterCode": "def title_case(s):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "'hello world'", "expected": "Hello World", "description": "Two words" },
+            { "input": "'python programming'", "expected": "Python Programming", "description": "Multiple words" },
+            { "input": "'a'", "expected": "A", "description": "Single character" },
+            { "input": "''", "expected": "", "description": "Empty string" }
+          ]
+        }
+      ],
+      "Basic Math": [
+        {
+          "id": "math-1",
+          "title": "Is Even or Odd",
+          "description": "Write a function that determines if a number is even or odd. Return 'even' or 'odd'.",
+          "hint": "Use the modulo operator (%) to check if the number is divisible by 2.",
+          "starterCode": "def even_or_odd(n):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "4", "expected": "even", "description": "4 is even" },
+            { "input": "7", "expected": "odd", "description": "7 is odd" },
+            { "input": "0", "expected": "even", "description": "0 is even" },
+            { "input": "1", "expected": "odd", "description": "1 is odd" }
+          ]
+        },
+        {
+          "id": "math-2",
+          "title": "Simple Calculator",
+          "description": "Write a function that performs basic arithmetic operations (+, -, *, /) on two numbers.",
+          "hint": "Use if-elif statements to handle different operations.",
+          "starterCode": "def calculator(a, b, operation):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "5, 3, '+'", "expected": 8, "description": "5 + 3 = 8" },
+            { "input": "10, 4, '-'", "expected": 6, "description": "10 - 4 = 6" },
+            { "input": "6, 7, '*'", "expected": 42, "description": "6 * 7 = 42" },
+            { "input": "15, 3, '/'", "expected": 5.0, "description": "15 / 3 = 5" }
+          ]
+        },
+        {
+          "id": "math-3",
+          "title": "Temperature Converter",
+          "description": "Write a function that converts Celsius to Fahrenheit. Formula: F = (C * 9/5) + 32",
+          "hint": "Apply the conversion formula: multiply by 9, divide by 5, then add 32.",
+          "starterCode": "def celsius_to_fahrenheit(celsius):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "0", "expected": 32.0, "description": "0°C = 32°F" },
+            { "input": "100", "expected": 212.0, "description": "100°C = 212°F" },
+            { "input": "25", "expected": 77.0, "description": "25°C = 77°F" },
+            { "input": "-10", "expected": 14.0, "description": "-10°C = 14°F" }
+          ]
+        },
+        {
+          "id": "math-4",
+          "title": "Circle Area",
+          "description": "Write a function that calculates the area of a circle given its radius. Formula: Area = π * r²",
+          "hint": "Use math.pi and the ** operator for exponentiation.",
+          "starterCode": "import math\n\ndef circle_area(radius):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "1", "expected": 3.141592653589793, "description": "Area of circle with radius 1" },
+            { "input": "2", "expected": 12.566370614359172, "description": "Area of circle with radius 2" },
+            { "input": "0", "expected": 0, "description": "Area of circle with radius 0" },
+            { "input": "5", "expected": 78.53981633974483, "description": "Area of circle with radius 5" }
+          ]
+        },
+        {
+          "id": "math-5",
+          "title": "Greatest Common Divisor",
+          "description": "Write a function that finds the greatest common divisor (GCD) of two numbers using the Euclidean algorithm.",
+          "hint": "Use the Euclidean algorithm: keep finding remainder until one number becomes 0.",
+          "starterCode": "def gcd(a, b):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "12, 8", "expected": 4, "description": "GCD of 12 and 8" },
+            { "input": "15, 25", "expected": 5, "description": "GCD of 15 and 25" },
+            { "input": "7, 13", "expected": 1, "description": "GCD of coprime numbers" },
+            { "input": "0, 5", "expected": 5, "description": "GCD with zero" }
+          ]
+        },
+        {
+          "id": "math-6",
+          "title": "Perfect Square",
+          "description": "Write a function that checks if a number is a perfect square.",
+          "hint": "Find the square root and check if it's a whole number using int() and **.",
+          "starterCode": "def is_perfect_square(n):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "16", "expected": true, "description": "16 is 4²" },
+            { "input": "25", "expected": true, "description": "25 is 5²" },
+            { "input": "15", "expected": false, "description": "15 is not a perfect square" },
+            { "input": "1", "expected": true, "description": "1 is 1²" }
+          ]
+        },
+        {
+          "id": "math-7",
+          "title": "Number Range Sum",
+          "description": "Write a function that calculates the sum of all numbers in a range from start to end (inclusive).",
+          "hint": "Use the formula (end - start + 1) * (start + end) // 2 or a loop.",
+          "starterCode": "def range_sum(start, end):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "1, 5", "expected": 15, "description": "1+2+3+4+5 = 15" },
+            { "input": "3, 7", "expected": 25, "description": "3+4+5+6+7 = 25" },
+            { "input": "5, 5", "expected": 5, "description": "Single number" },
+            { "input": "0, 3", "expected": 6, "description": "0+1+2+3 = 6" }
+          ]
+        },
+        {
+          "id": "math-8",
+          "title": "Absolute Value",
+          "description": "Write a function that returns the absolute value of a number without using the built-in abs() function.",
+          "hint": "If the number is negative, return its negative (which makes it positive).",
+          "starterCode": "def absolute_value(n):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "-5", "expected": 5, "description": "Absolute value of -5" },
+            { "input": "3", "expected": 3, "description": "Absolute value of positive number" },
+            { "input": "0", "expected": 0, "description": "Absolute value of zero" },
+            { "input": "-100", "expected": 100, "description": "Absolute value of -100" }
+          ]
+        }
+      ]
+    },
+    "Intermediate": {
+      "Dictionaries": [
+        {
+          "id": "dict-1",
+          "title": "Dictionary Value Sum",
+          "description": "Write a function that takes a dictionary with numeric values and returns the sum of all values.",
+          "hint": "Use dict.values() to get all values, then sum them up.",
+          "starterCode": "def sum_dict_values(d):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "{'a': 1, 'b': 2, 'c': 3}", "expected": 6, "description": "Simple dictionary" },
+            { "input": "{'x': 10, 'y': -5, 'z': 15}", "expected": 20, "description": "Mixed positive and negative" },
+            { "input": "{}", "expected": 0, "description": "Empty dictionary" },
+            { "input": "{'single': 42}", "expected": 42, "description": "Single key-value pair" }
+          ]
+        },
+        {
+          "id": "dict-2",
+          "title": "Count Dictionary Keys",
+          "description": "Write a function that counts the number of keys in a dictionary.",
+          "hint": "Use len() function on the dictionary or dict.keys().",
+          "starterCode": "def count_keys(d):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "{'a': 1, 'b': 2, 'c': 3}", "expected": 3, "description": "Three keys" },
+            { "input": "{}", "expected": 0, "description": "Empty dictionary" },
+            { "input": "{'name': 'John', 'age': 30}", "expected": 2, "description": "Two keys" },
+            { "input": "{'single': true}", "expected": 1, "description": "Single key" }
+          ]
+        },
+        {
+          "id": "dict-3",
+          "title": "Get Dictionary Keys",
+          "description": "Write a function that returns a list of all keys in a dictionary.",
+          "hint": "Use dict.keys() method and convert to list if needed.",
+          "starterCode": "def get_dict_keys(d):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "{'a': 1, 'b': 2, 'c': 3}", "expected": ["a", "b", "c"], "description": "Three keys" },
+            { "input": "{'name': 'John', 'age': 30}", "expected": ["name", "age"], "description": "String keys" },
+            { "input": "{}", "expected": [], "description": "Empty dictionary" },
+            { "input": "{'x': 10}", "expected": ["x"], "description": "Single key" }
+          ]
+        },
+        {
+          "id": "dict-4",
+          "title": "Dictionary Has Key",
+          "description": "Write a function that checks if a dictionary has a specific key.",
+          "hint": "Use the 'in' operator to check if key exists in dictionary.",
+          "starterCode": "def has_key(d, key):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "{'a': 1, 'b': 2}, 'a'", "expected": true, "description": "Key exists" },
+            { "input": "{'name': 'John', 'age': 30}, 'email'", "expected": false, "description": "Key doesn't exist" },
+            { "input": "{}, 'test'", "expected": false, "description": "Empty dictionary" },
+            { "input": "{'x': null}, 'x'", "expected": true, "description": "Key with null value" }
+          ]
+        },
+        {
+          "id": "dict-5",
+          "title": "Merge Dictionaries",
+          "description": "Write a function that merges two dictionaries into a new dictionary. If both dictionaries have the same key, use the value from the second dictionary.",
+          "hint": "Use dictionary unpacking with ** operator or dict.update() method.",
+          "starterCode": "def merge_dicts(dict1, dict2):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "{'a': 1, 'b': 2}, {'c': 3, 'd': 4}", "expected": {"a": 1, "b": 2, "c": 3, "d": 4}, "description": "No overlapping keys" },
+            { "input": "{'a': 1, 'b': 2}, {'b': 3, 'c': 4}", "expected": {"a": 1, "b": 3, "c": 4}, "description": "Overlapping keys" },
+            { "input": "{}, {'a': 1}", "expected": {"a": 1}, "description": "Empty first dictionary" },
+            { "input": "{'a': 1}, {}", "expected": {"a": 1}, "description": "Empty second dictionary" }
+          ]
+        },
+        {
+          "id": "dict-6",
+          "title": "Dictionary to List of Tuples",
+          "description": "Write a function that converts a dictionary to a list of (key, value) tuples.",
+          "hint": "Use dict.items() method to get key-value pairs.",
+          "starterCode": "def dict_to_tuples(d):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "{'a': 1, 'b': 2}", "expected": [["a", 1], ["b", 2]], "description": "Simple dictionary" },
+            { "input": "{'name': 'John', 'age': 30}", "expected": [["name", "John"], ["age", 30]], "description": "Mixed types" },
+            { "input": "{}", "expected": [], "description": "Empty dictionary" },
+            { "input": "{'x': true}", "expected": [["x", true]], "description": "Single key-value pair" }
+          ]
+        },
+        {
+          "id": "dict-7",
+          "title": "Filter Dictionary by Value",
+          "description": "Write a function that creates a new dictionary containing only key-value pairs whose values are greater than a given threshold.",
+          "hint": "Iterate through dictionary items and only include pairs that meet the condition.",
+          "starterCode": "def filter_dict_by_value(d, threshold):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "{'a': 1, 'b': 5, 'c': 3}, 2", "expected": {"b": 5, "c": 3}, "description": "Filter values > 2" },
+            { "input": "{'x': 10, 'y': 1, 'z': 8}, 5", "expected": {"x": 10, "z": 8}, "description": "Filter values > 5" },
+            { "input": "{'a': 1, 'b': 2}, 10", "expected": {}, "description": "No values meet threshold" },
+            { "input": "{}, 0", "expected": {}, "description": "Empty dictionary" }
+          ]
+        },
+        {
+          "id": "dict-8",
+          "title": "Invert Dictionary",
+          "description": "Write a function that inverts a dictionary (keys become values and values become keys).",
+          "hint": "Create a new dictionary where each value becomes a key and each key becomes a value.",
+          "starterCode": "def invert_dict(d):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "{'a': 1, 'b': 2, 'c': 3}", "expected": {"1": "a", "2": "b", "3": "c"}, "description": "Simple inversion" },
+            { "input": "{'name': 'John', 'city': 'NYC'}", "expected": {"John": "name", "NYC": "city"}, "description": "String values" },
+            { "input": "{}", "expected": {}, "description": "Empty dictionary" },
+            { "input": "{'x': 10}", "expected": {"10": "x"}, "description": "Single pair" }
+          ]
+        },
+        {
+          "id": "dict-9",
+          "title": "Group List by Property",
+          "description": "Write a function that groups a list of dictionaries by a specific key value.",
+          "hint": "Create a dictionary where keys are property values and values are lists of dictionaries with that property.",
+          "starterCode": "def group_by_property(lst, prop):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "[{'name': 'John', 'age': 25}, {'name': 'Jane', 'age': 25}, {'name': 'Bob', 'age': 30}], 'age'", "expected": {"25": [{"name": "John", "age": 25}, {"name": "Jane", "age": 25}], "30": [{"name": "Bob", "age": 30}]}, "description": "Group by age" },
+            { "input": "[{'type': 'fruit', 'name': 'apple'}, {'type': 'vegetable', 'name': 'carrot'}], 'type'", "expected": {"fruit": [{"type": "fruit", "name": "apple"}], "vegetable": [{"type": "vegetable", "name": "carrot"}]}, "description": "Group by type" }
+          ]
+        },
+        {
+          "id": "dict-10",
+          "title": "Dictionary Key Transformation",
+          "description": "Write a function that transforms all keys in a dictionary to uppercase.",
+          "hint": "Create a new dictionary and copy each key-value pair with the key converted to uppercase.",
+          "starterCode": "def transform_keys_upper(d):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "{'name': 'John', 'age': 25}", "expected": {"NAME": "John", "AGE": 25}, "description": "Transform to uppercase" },
+            { "input": "{'a': 1, 'b': 2, 'c': 3}", "expected": {"A": 1, "B": 2, "C": 3}, "description": "Single letter keys" },
+            { "input": "{}", "expected": {}, "description": "Empty dictionary" },
+            { "input": "{'firstName': 'Jane'}", "expected": {"FIRSTNAME": "Jane"}, "description": "Camel case key" }
+          ]
+        },
+        {
+          "id": "dict-11",
+          "title": "Count Character Frequency",
+          "description": "Write a function that counts the frequency of each character in a string and returns a dictionary.",
+          "hint": "Iterate through the string and use a dictionary to count occurrences of each character.",
+          "starterCode": "def char_frequency(s):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "'hello'", "expected": {"h": 1, "e": 1, "l": 2, "o": 1}, "description": "Character frequency in 'hello'" },
+            { "input": "'aaa'", "expected": {"a": 3}, "description": "Repeated character" },
+            { "input": "'abc'", "expected": {"a": 1, "b": 1, "c": 1}, "description": "All unique characters" },
+            { "input": "''", "expected": {}, "description": "Empty string" }
+          ]
+        },
+        {
+          "id": "dict-12",
+          "title": "Find Most Frequent Value",
+          "description": "Write a function that finds the most frequently occurring value in a dictionary.",
+          "hint": "Count the frequency of each value and return the one with the highest count.",
+          "starterCode": "def most_frequent_value(d):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "{'a': 1, 'b': 2, 'c': 1, 'd': 3, 'e': 1}", "expected": 1, "description": "Value 1 appears 3 times" },
+            { "input": "{'x': 'apple', 'y': 'banana', 'z': 'apple'}", "expected": "apple", "description": "String value 'apple' appears twice" },
+            { "input": "{'a': 5}", "expected": 5, "description": "Single value" },
+            { "input": "{'a': 1, 'b': 2, 'c': 3}", "expected": 1, "description": "All values appear once, return first" }
+          ]
+        }
+      ],
+      "Recursion": [
+        {
+          "id": "rec-1",
+          "title": "Factorial",
+          "description": "Write a recursive function that calculates the factorial of a positive integer n. Factorial of n (n!) is n × (n-1) × (n-2) × ... × 1.",
+          "hint": "Base case: factorial of 0 or 1 is 1. Recursive case: n * factorial(n-1).",
+          "starterCode": "def factorial(n):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "5", "expected": 120, "description": "5! = 5 × 4 × 3 × 2 × 1" },
+            { "input": "0", "expected": 1, "description": "0! = 1 by definition" },
+            { "input": "1", "expected": 1, "description": "1! = 1" },
+            { "input": "4", "expected": 24, "description": "4! = 4 × 3 × 2 × 1" }
+          ]
+        },
+        {
+          "id": "rec-2",
+          "title": "Fibonacci",
+          "description": "Write a recursive function to find the nth Fibonacci number. The Fibonacci sequence starts with 0, 1 and each subsequent number is the sum of the previous two.",
+          "hint": "Base cases: fib(0) = 0, fib(1) = 1. Recursive case: fib(n) = fib(n-1) + fib(n-2).",
+          "starterCode": "def fibonacci(n):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "0", "expected": 0, "description": "First Fibonacci number" },
+            { "input": "1", "expected": 1, "description": "Second Fibonacci number" },
+            { "input": "5", "expected": 5, "description": "Sixth Fibonacci number" },
+            { "input": "8", "expected": 21, "description": "Ninth Fibonacci number" }
+          ]
+        },
+        {
+          "id": "rec-3",
+          "title": "Power Function",
+          "description": "Write a recursive function that calculates base raised to the power of exponent (base^exponent).",
+          "hint": "Base case: any number to the power of 0 is 1. Recursive case: base * power(base, exponent-1).",
+          "starterCode": "def power(base, exponent):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "2, 3", "expected": 8, "description": "2^3 = 8" },
+            { "input": "5, 0", "expected": 1, "description": "5^0 = 1" },
+            { "input": "3, 4", "expected": 81, "description": "3^4 = 81" },
+            { "input": "10, 2", "expected": 100, "description": "10^2 = 100" }
+          ]
+        },
+        {
+          "id": "rec-4",
+          "title": "Sum of Digits",
+          "description": "Write a recursive function that calculates the sum of all digits in a positive integer.",
+          "hint": "Base case: if number is less than 10, return the number. Recursive case: last digit + sum of remaining digits.",
+          "starterCode": "def sum_of_digits(n):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "123", "expected": 6, "description": "1 + 2 + 3 = 6" },
+            { "input": "456", "expected": 15, "description": "4 + 5 + 6 = 15" },
+            { "input": "9", "expected": 9, "description": "Single digit" },
+            { "input": "1000", "expected": 1, "description": "1 + 0 + 0 + 0 = 1" }
+          ]
+        },
+        {
+          "id": "rec-5",
+          "title": "List Sum Recursive",
+          "description": "Write a recursive function that calculates the sum of all elements in a list.",
+          "hint": "Base case: empty list returns 0. Recursive case: first element + sum of rest of list.",
+          "starterCode": "def recursive_sum(lst):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "[1, 2, 3, 4, 5]", "expected": 15, "description": "Sum of 1 to 5" },
+            { "input": "[10, 20, 30]", "expected": 60, "description": "Sum of multiples of 10" },
+            { "input": "[]", "expected": 0, "description": "Empty list" },
+            { "input": "[42]", "expected": 42, "description": "Single element" }
+          ]
+        },
+        {
+          "id": "rec-6",
+          "title": "Palindrome Check",
+          "description": "Write a recursive function that checks if a string is a palindrome (reads the same forwards and backwards).",
+          "hint": "Base case: empty string or single character is a palindrome. Recursive case: first and last characters match and middle is palindrome.",
+          "starterCode": "def is_palindrome_recursive(s):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "'racecar'", "expected": true, "description": "Classic palindrome" },
+            { "input": "'hello'", "expected": false, "description": "Not a palindrome" },
+            { "input": "'a'", "expected": true, "description": "Single character" },
+            { "input": "'madam'", "expected": true, "description": "Another palindrome" }
+          ]
+        },
+        {
+          "id": "rec-7",
+          "title": "Binary Tree Height",
+          "description": "Write a recursive function that calculates the height of a binary tree represented as nested dictionaries.",
+          "hint": "Height is 1 + maximum height of left and right subtrees. Base case: null node has height 0.",
+          "starterCode": "def tree_height(node):\n    # node structure: {'val': value, 'left': left_node, 'right': right_node}\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "null", "expected": 0, "description": "Empty tree" },
+            { "input": "{'val': 1, 'left': null, 'right': null}", "expected": 1, "description": "Single node" },
+            { "input": "{'val': 1, 'left': {'val': 2, 'left': null, 'right': null}, 'right': {'val': 3, 'left': null, 'right': null}}", "expected": 2, "description": "Tree with two levels" }
+          ]
+        },
+        {
+          "id": "rec-8",
+          "title": "Generate Permutations",
+          "description": "Write a recursive function that generates all permutations of a list.",
+          "hint": "For each element, generate permutations of remaining elements and prepend the current element.",
+          "starterCode": "def permutations(lst):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "[1, 2]", "expected": [[1, 2], [2, 1]], "description": "Permutations of [1,2]" },
+            { "input": "[1, 2, 3]", "expected": [[1, 2, 3], [1, 3, 2], [2, 1, 3], [2, 3, 1], [3, 1, 2], [3, 2, 1]], "description": "Permutations of [1,2,3]" },
+            { "input": "[]", "expected": [[]], "description": "Empty list" },
+            { "input": "[1]", "expected": [[1]], "description": "Single element" }
+          ]
+        },
+        {
+          "id": "rec-9",
+          "title": "Count Paths in Grid",
+          "description": "Count the number of unique paths from top-left to bottom-right in an m×n grid (can only move right or down).",
+          "hint": "Paths to current cell = paths from cell above + paths from cell to the left.",
+          "starterCode": "def count_paths(m, n):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "2, 2", "expected": 2, "description": "2x2 grid has 2 paths" },
+            { "input": "3, 2", "expected": 3, "description": "3x2 grid has 3 paths" },
+            { "input": "3, 3", "expected": 6, "description": "3x3 grid has 6 paths" },
+            { "input": "1, 1", "expected": 1, "description": "1x1 grid has 1 path" }
+          ]
+        },
+        {
+          "id": "rec-10",
+          "title": "String Reversal Recursive",
+          "description": "Write a recursive function that reverses a string without using built-in reverse methods.",
+          "hint": "Base case: empty or single character string. Recursive case: last character + reverse of remaining string.",
+          "starterCode": "def reverse_string_recursive(s):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "'hello'", "expected": "olleh", "description": "Reverse 'hello'" },
+            { "input": "'abc'", "expected": "cba", "description": "Reverse 'abc'" },
+            { "input": "'a'", "expected": "a", "description": "Single character" },
+            { "input": "''", "expected": "", "description": "Empty string" }
+          ]
+        },
+        {
+          "id": "rec-11",
+          "title": "Tower of Hanoi",
+          "description": "Write a recursive function that solves the Tower of Hanoi puzzle and returns the minimum number of moves.",
+          "hint": "To move n disks: move n-1 disks to auxiliary pole, move largest disk to destination, move n-1 disks from auxiliary to destination.",
+          "starterCode": "def hanoi(n):\n    # Your code here\n    # Return number of moves\n\n",
+          "testCases": [
+            { "input": "1", "expected": 1, "description": "1 disk requires 1 move" },
+            { "input": "2", "expected": 3, "description": "2 disks require 3 moves" },
+            { "input": "3", "expected": 7, "description": "3 disks require 7 moves" },
+            { "input": "4", "expected": 15, "description": "4 disks require 15 moves" }
+          ]
+        },
+        {
+          "id": "rec-12",
+          "title": "Greatest Common Divisor",
+          "description": "Write a recursive function to find the GCD of two numbers using Euclidean algorithm.",
+          "hint": "Base case: if b is 0, return a. Recursive case: gcd(b, a % b).",
+          "starterCode": "def gcd_recursive(a, b):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "48, 18", "expected": 6, "description": "GCD of 48 and 18" },
+            { "input": "12, 8", "expected": 4, "description": "GCD of 12 and 8" },
+            { "input": "17, 13", "expected": 1, "description": "GCD of coprime numbers" },
+            { "input": "100, 25", "expected": 25, "description": "One divides the other" }
+          ]
+        }
+      ],
+      "List Comprehensions": [
+        {
+          "id": "comp-1",
+          "title": "Square Numbers",
+          "description": "Write a function that uses list comprehension to create a list of squares of numbers from 1 to n.",
+          "hint": "Use [x**2 for x in range(1, n+1)] to generate squares.",
+          "starterCode": "def square_numbers(n):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "5", "expected": [1, 4, 9, 16, 25], "description": "Squares from 1 to 5" },
+            { "input": "3", "expected": [1, 4, 9], "description": "Squares from 1 to 3" },
+            { "input": "1", "expected": [1], "description": "Square of 1" },
+            { "input": "0", "expected": [], "description": "No squares" }
+          ]
+        },
+        {
+          "id": "comp-2",
+          "title": "Filter Even Numbers",
+          "description": "Write a function that uses list comprehension to filter even numbers from a list.",
+          "hint": "Use [x for x in lst if x % 2 == 0] to filter even numbers.",
+          "starterCode": "def filter_evens(lst):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "[1, 2, 3, 4, 5, 6]", "expected": [2, 4, 6], "description": "Filter even numbers" },
+            { "input": "[1, 3, 5]", "expected": [], "description": "No even numbers" },
+            { "input": "[2, 4, 6, 8]", "expected": [2, 4, 6, 8], "description": "All even numbers" },
+            { "input": "[]", "expected": [], "description": "Empty list" }
+          ]
+        },
+        {
+          "id": "comp-3",
+          "title": "String Lengths",
+          "description": "Write a function that uses list comprehension to get the length of each string in a list.",
+          "hint": "Use [len(s) for s in strings] to get lengths.",
+          "starterCode": "def string_lengths(strings):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "['hello', 'world', 'python']", "expected": [5, 5, 6], "description": "Lengths of strings" },
+            { "input": "['a', 'bb', 'ccc']", "expected": [1, 2, 3], "description": "Different length strings" },
+            { "input": "[]", "expected": [], "description": "Empty list" },
+            { "input": "['']", "expected": [0], "description": "Empty string" }
+          ]
+        },
+        {
+          "id": "comp-4",
+          "title": "Uppercase Words",
+          "description": "Write a function that uses list comprehension to convert all strings in a list to uppercase.",
+          "hint": "Use [s.upper() for s in strings] to convert to uppercase.",
+          "starterCode": "def uppercase_words(strings):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "['hello', 'world', 'python']", "expected": ["HELLO", "WORLD", "PYTHON"], "description": "Convert to uppercase" },
+            { "input": "['a', 'B', 'c']", "expected": ["A", "B", "C"], "description": "Mixed case" },
+            { "input": "[]", "expected": [], "description": "Empty list" },
+            { "input": "['']", "expected": [""], "description": "Empty string" }
+          ]
+        },
+        {
+          "id": "comp-5",
+          "title": "Positive Numbers Only",
+          "description": "Write a function that uses list comprehension to filter only positive numbers from a list.",
+          "hint": "Use [x for x in lst if x > 0] to filter positive numbers.",
+          "starterCode": "def positive_numbers(lst):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "[-2, -1, 0, 1, 2, 3]", "expected": [1, 2, 3], "description": "Filter positive numbers" },
+            { "input": "[-5, -3, -1]", "expected": [], "description": "No positive numbers" },
+            { "input": "[1, 2, 3, 4]", "expected": [1, 2, 3, 4], "description": "All positive numbers" },
+            { "input": "[]", "expected": [], "description": "Empty list" }
+          ]
+        },
+        {
+          "id": "comp-6",
+          "title": "Multiply by Index",
+          "description": "Write a function that uses list comprehension to multiply each element by its index.",
+          "hint": "Use [i * x for i, x in enumerate(lst)] to multiply by index.",
+          "starterCode": "def multiply_by_index(lst):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "[1, 2, 3, 4]", "expected": [0, 2, 6, 12], "description": "Multiply by index" },
+            { "input": "[5, 10, 15]", "expected": [0, 10, 30], "description": "Different numbers" },
+            { "input": "[1]", "expected": [0], "description": "Single element" },
+            { "input": "[]", "expected": [], "description": "Empty list" }
+          ]
+        },
+        {
+          "id": "comp-7",
+          "title": "Words Starting With Vowel",
+          "description": "Write a function that uses list comprehension to filter words that start with a vowel.",
+          "hint": "Use [word for word in words if word[0].lower() in 'aeiou'] to filter vowel-starting words.",
+          "starterCode": "def words_start_vowel(words):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "['apple', 'banana', 'orange', 'grape']", "expected": ["apple", "orange"], "description": "Words starting with vowels" },
+            { "input": "['elephant', 'umbrella', 'ice']", "expected": ["elephant", "umbrella", "ice"], "description": "All start with vowels" },
+            { "input": "['cat', 'dog', 'bird']", "expected": [], "description": "No words start with vowels" },
+            { "input": "[]", "expected": [], "description": "Empty list" }
+          ]
+        },
+        {
+          "id": "comp-8",
+          "title": "Nested List Flattening",
+          "description": "Write a function that uses list comprehension to flatten a list of lists.",
+          "hint": "Use [item for sublist in lst for item in sublist] to flatten.",
+          "starterCode": "def flatten_lists(lst):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "[[1, 2], [3, 4], [5, 6]]", "expected": [1, 2, 3, 4, 5, 6], "description": "Flatten list of lists" },
+            { "input": "[[1], [2, 3], [4, 5, 6]]", "expected": [1, 2, 3, 4, 5, 6], "description": "Different sized sublists" },
+            { "input": "[]", "expected": [], "description": "Empty list" },
+            { "input": "[[], [1, 2], []]", "expected": [1, 2], "description": "Some empty sublists" }
+          ]
+        },
+        {
+          "id": "comp-9",
+          "title": "Dictionary Values",
+          "description": "Write a function that uses list comprehension to extract all values from a list of dictionaries for a specific key.",
+          "hint": "Use [d[key] for d in dicts if key in d] to extract values safely.",
+          "starterCode": "def extract_values(dicts, key):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "[{'name': 'John', 'age': 25}, {'name': 'Jane', 'age': 30}], 'name'", "expected": ["John", "Jane"], "description": "Extract names" },
+            { "input": "[{'a': 1, 'b': 2}, {'a': 3, 'c': 4}], 'a'", "expected": [1, 3], "description": "Extract 'a' values" },
+            { "input": "[{'x': 10}, {'y': 20}], 'z'", "expected": [], "description": "Key not found" },
+            { "input": "[], 'key'", "expected": [], "description": "Empty list" }
+          ]
+        },
+        {
+          "id": "comp-10",
+          "title": "Conditional Transformation",
+          "description": "Write a function that uses list comprehension to square positive numbers and cube negative numbers.",
+          "hint": "Use [x**2 if x > 0 else x**3 for x in lst] for conditional transformation.",
+          "starterCode": "def conditional_transform(lst):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "[-2, -1, 0, 1, 2]", "expected": [-8, -1, 0, 1, 4], "description": "Square positive, cube negative" },
+            { "input": "[3, -3, 4, -4]", "expected": [9, -27, 16, -64], "description": "Mixed positive and negative" },
+            { "input": "[1, 2, 3]", "expected": [1, 4, 9], "description": "All positive" },
+            { "input": "[-1, -2, -3]", "expected": [-1, -8, -27], "description": "All negative" }
+          ]
+        }
+      ],
+      "Regular Expressions": [
+        {
+          "id": "regex-1",
+          "title": "Email Validator",
+          "description": "Write a function that validates if a string is a valid email format using regex.",
+          "hint": "Use re.match() with a pattern like r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$'.",
+          "starterCode": "import re\n\ndef is_valid_email(email):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "'user@example.com'", "expected": true, "description": "Valid email" },
+            { "input": "'invalid.email'", "expected": false, "description": "Missing @ and domain" },
+            { "input": "'user@domain'", "expected": false, "description": "Missing .extension" },
+            { "input": "'user@example.co.uk'", "expected": true, "description": "Valid with subdomain" }
+          ]
+        },
+        {
+          "id": "regex-2",
+          "title": "Phone Number Formatter",
+          "description": "Write a function that formats a 10-digit phone number as (XXX) XXX-XXXX.",
+          "hint": "Use re.sub() with capturing groups to reformat the number.",
+          "starterCode": "import re\n\ndef format_phone_number(phone):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "'1234567890'", "expected": "(123) 456-7890", "description": "Format 10 digits" },
+            { "input": "'5551234567'", "expected": "(555) 123-4567", "description": "Another valid number" },
+            { "input": "'123'", "expected": "Invalid phone number", "description": "Too few digits" },
+            { "input": "'12345678901'", "expected": "Invalid phone number", "description": "Too many digits" }
+          ]
+        },
+        {
+          "id": "regex-3",
+          "title": "Extract Numbers",
+          "description": "Write a function that extracts all numbers from a string and returns them as a list.",
+          "hint": "Use re.findall() with pattern r'\\d+' to find all number sequences.",
+          "starterCode": "import re\n\ndef extract_numbers(s):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "'I have 5 apples and 10 oranges'", "expected": ["5", "10"], "description": "Extract multiple numbers" },
+            { "input": "'Price: $19.99'", "expected": ["19", "99"], "description": "Extract from price" },
+            { "input": "'No numbers here!'", "expected": [], "description": "No numbers found" },
+            { "input": "'Year 2023 was great!'", "expected": ["2023"], "description": "Extract year" }
+          ]
+        },
+        {
+          "id": "regex-4",
+          "title": "Password Validator",
+          "description": "Write a function that validates a password: at least 8 characters, contains uppercase, lowercase, digit, and special character.",
+          "hint": "Use multiple regex patterns or a single complex pattern to check all requirements.",
+          "starterCode": "import re\n\ndef is_valid_password(password):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "'Password123!'", "expected": true, "description": "Valid password" },
+            { "input": "'password'", "expected": false, "description": "Missing uppercase, digit, special char" },
+            { "input": "'Pass123'", "expected": false, "description": "Missing special character" },
+            { "input": "'P@ss1'", "expected": false, "description": "Too short" }
+          ]
+        },
+        {
+          "id": "regex-5",
+          "title": "Remove HTML Tags",
+          "description": "Write a function that removes all HTML tags from a string using regex.",
+          "hint": "Use re.sub() with pattern r'<[^>]+>' to match and remove HTML tags.",
+          "starterCode": "import re\n\ndef remove_html_tags(html):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "'<p>Hello <b>world</b>!</p>'", "expected": "Hello world!", "description": "Remove HTML tags" },
+            { "input": "'<div><span>Python</span> is <em>awesome</em></div>'", "expected": "Python is awesome", "description": "Multiple nested tags" },
+            { "input": "'No tags here'", "expected": "No tags here", "description": "No HTML tags" },
+            { "input": "'<br/><hr/>'", "expected": "", "description": "Self-closing tags" }
+          ]
+        },
+        {
+          "id": "regex-6",
+          "title": "Find URLs",
+          "description": "Write a function that finds all URLs in a text string using regex.",
+          "hint": "Use re.findall() with a pattern that matches http/https URLs.",
+          "starterCode": "import re\n\ndef find_urls(text):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "'Visit https://www.example.com for more info'", "expected": ["https://www.example.com"], "description": "Find HTTPS URL" },
+            { "input": "'Check http://site1.com and https://site2.org'", "expected": ["http://site1.com", "https://site2.org"], "description": "Multiple URLs" },
+            { "input": "'No URLs in this text'", "expected": [], "description": "No URLs found" },
+            { "input": "'Go to www.example.com'", "expected": [], "description": "URL without protocol" }
+          ]
+        }
+      ]
+    },
+    "Advanced": {
+      "Algorithms": [
+        {
+          "id": "alg-1",
+          "title": "Binary Search",
+          "description": "Implement binary search to find the index of a target value in a sorted list. Return -1 if not found.",
+          "hint": "Use two pointers (left and right). Compare the middle element with the target and adjust the search range accordingly.",
+          "starterCode": "def binary_search(arr, target):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "[1, 2, 3, 4, 5, 6, 7, 8, 9], 5", "expected": 4, "description": "Target found in middle" },
+            { "input": "[1, 3, 5, 7, 9], 7", "expected": 3, "description": "Target found" },
+            { "input": "[1, 3, 5, 7, 9], 4", "expected": -1, "description": "Target not found" },
+            { "input": "[2, 4, 6], 2", "expected": 0, "description": "Target at beginning" }
+          ]
+        },
+        {
+          "id": "alg-2",
+          "title": "Bubble Sort",
+          "description": "Implement the bubble sort algorithm to sort a list of numbers in ascending order.",
+          "hint": "Compare adjacent elements and swap them if they're in wrong order. Repeat until no swaps are needed.",
+          "starterCode": "def bubble_sort(arr):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "[64, 34, 25, 12, 22, 11, 90]", "expected": [11, 12, 22, 25, 34, 64, 90], "description": "Unsorted list" },
+            { "input": "[5, 2, 8, 1, 9]", "expected": [1, 2, 5, 8, 9], "description": "Random order" },
+            { "input": "[1, 2, 3, 4, 5]", "expected": [1, 2, 3, 4, 5], "description": "Already sorted" },
+            { "input": "[3]", "expected": [3], "description": "Single element" }
+          ]
+        },
+        {
+          "id": "alg-3",
+          "title": "Quick Sort",
+          "description": "Implement the quicksort algorithm to sort a list of numbers in ascending order.",
+          "hint": "Choose a pivot, partition the list around it, then recursively sort the sub-lists.",
+          "starterCode": "def quick_sort(arr):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "[3, 6, 8, 10, 1, 2, 1]", "expected": [1, 1, 2, 3, 6, 8, 10], "description": "Unsorted with duplicates" },
+            { "input": "[5, 2, 8, 1, 9]", "expected": [1, 2, 5, 8, 9], "description": "Random order" },
+            { "input": "[1]", "expected": [1], "description": "Single element" },
+            { "input": "[]", "expected": [], "description": "Empty list" }
+          ]
+        },
+        {
+          "id": "alg-4",
+          "title": "Merge Sort",
+          "description": "Implement the merge sort algorithm to sort a list of numbers in ascending order.",
+          "hint": "Divide the list into halves, recursively sort each half, then merge the sorted halves.",
+          "starterCode": "def merge_sort(arr):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "[38, 27, 43, 3, 9, 82, 10]", "expected": [3, 9, 10, 27, 38, 43, 82], "description": "Unsorted list" },
+            { "input": "[5, 2, 8, 1, 9]", "expected": [1, 2, 5, 8, 9], "description": "Random order" },
+            { "input": "[1, 2, 3]", "expected": [1, 2, 3], "description": "Already sorted" },
+            { "input": "[]", "expected": [], "description": "Empty list" }
+          ]
+        },
+        {
+          "id": "alg-5",
+          "title": "Linear Search",
+          "description": "Implement linear search to find the index of a target value in a list. Return -1 if not found.",
+          "hint": "Iterate through the list from start to end, checking each element against the target.",
+          "starterCode": "def linear_search(arr, target):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "[4, 2, 7, 1, 9, 3], 7", "expected": 2, "description": "Target found" },
+            { "input": "[1, 3, 5, 7, 9], 4", "expected": -1, "description": "Target not found" },
+            { "input": "[5], 5", "expected": 0, "description": "Single element found" },
+            { "input": "[], 1", "expected": -1, "description": "Empty list" }
+          ]
+        },
+        {
+          "id": "alg-6",
+          "title": "Selection Sort",
+          "description": "Implement the selection sort algorithm to sort a list of numbers in ascending order.",
+          "hint": "Find the minimum element and swap it with the first element, then repeat for the rest of the list.",
+          "starterCode": "def selection_sort(arr):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "[64, 25, 12, 22, 11]", "expected": [11, 12, 22, 25, 64], "description": "Unsorted list" },
+            { "input": "[5, 2, 8, 1, 9]", "expected": [1, 2, 5, 8, 9], "description": "Random order" },
+            { "input": "[1, 2, 3]", "expected": [1, 2, 3], "description": "Already sorted" },
+            { "input": "[3]", "expected": [3], "description": "Single element" }
+          ]
+        },
+        {
+          "id": "alg-7",
+          "title": "Insertion Sort",
+          "description": "Implement the insertion sort algorithm to sort a list of numbers in ascending order.",
+          "hint": "Build the sorted list one element at a time by inserting each element into its correct position.",
+          "starterCode": "def insertion_sort(arr):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "[5, 2, 4, 6, 1, 3]", "expected": [1, 2, 3, 4, 5, 6], "description": "Unsorted list" },
+            { "input": "[31, 41, 59, 26, 41, 58]", "expected": [26, 31, 41, 41, 58, 59], "description": "With duplicates" },
+            { "input": "[1]", "expected": [1], "description": "Single element" },
+            { "input": "[]", "expected": [], "description": "Empty list" }
+          ]
+        },
+        {
+          "id": "alg-8",
+          "title": "Two Sum",
+          "description": "Given a list of integers and a target sum, return the indices of two numbers that add up to the target.",
+          "hint": "Use a dictionary to store numbers and their indices. For each number, check if target minus that number exists in the dictionary.",
+          "starterCode": "def two_sum(nums, target):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "[2, 7, 11, 15], 9", "expected": [0, 1], "description": "2 + 7 = 9" },
+            { "input": "[3, 2, 4], 6", "expected": [1, 2], "description": "2 + 4 = 6" },
+            { "input": "[3, 3], 6", "expected": [0, 1], "description": "3 + 3 = 6" },
+            { "input": "[1, 2, 3], 7", "expected": null, "description": "No valid pair" }
+          ]
+        },
+        {
+          "id": "alg-9",
+          "title": "Find Duplicates",
+          "description": "Find all duplicate elements in a list and return them as a list.",
+          "hint": "Use a dictionary to count occurrences or a set to track seen elements.",
+          "starterCode": "def find_duplicates(arr):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "[1, 2, 3, 2, 4, 3, 5]", "expected": [2, 3], "description": "Multiple duplicates" },
+            { "input": "[1, 1, 1, 2, 2]", "expected": [1, 2], "description": "Multiple occurrences" },
+            { "input": "[1, 2, 3, 4, 5]", "expected": [], "description": "No duplicates" },
+            { "input": "[]", "expected": [], "description": "Empty list" }
+          ]
+        },
+        {
+          "id": "alg-10",
+          "title": "Longest Increasing Subsequence",
+          "description": "Find the length of the longest increasing subsequence in a list.",
+          "hint": "Use dynamic programming. For each element, find the longest subsequence ending at that element.",
+          "starterCode": "def longest_increasing_subsequence(arr):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "[10, 9, 2, 5, 3, 7, 101, 18]", "expected": 4, "description": "LIS: [2, 3, 7, 18] or [2, 3, 7, 101]" },
+            { "input": "[0, 1, 0, 3, 2, 3]", "expected": 4, "description": "LIS: [0, 1, 2, 3]" },
+            { "input": "[7, 7, 7, 7, 7, 7, 7]", "expected": 1, "description": "All same elements" },
+            { "input": "[]", "expected": 0, "description": "Empty list" }
+          ]
+        },
+        {
+          "id": "alg-11",
+          "title": "Kadane's Algorithm",
+          "description": "Find the maximum sum of a contiguous subarray using Kadane's algorithm.",
+          "hint": "Keep track of the maximum sum ending at each position. The answer is the maximum of all these values.",
+          "starterCode": "def max_subarray_sum(arr):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "[-2, 1, -3, 4, -1, 2, 1, -5, 4]", "expected": 6, "description": "Subarray [4, -1, 2, 1] has sum 6" },
+            { "input": "[1]", "expected": 1, "description": "Single element" },
+            { "input": "[5, 4, -1, 7, 8]", "expected": 23, "description": "All positive except one" },
+            { "input": "[-1, -2, -3]", "expected": -1, "description": "All negative numbers" }
+          ]
+        },
+        {
+          "id": "alg-12",
+          "title": "Dutch National Flag",
+          "description": "Sort an array containing only 0s, 1s, and 2s in a single pass (Dutch National Flag problem).",
+          "hint": "Use three pointers: one for 0s, one for 1s, and one for 2s. Swap elements to their correct positions.",
+          "starterCode": "def dutch_flag_sort(arr):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "[2, 0, 2, 1, 1, 0]", "expected": [0, 0, 1, 1, 2, 2], "description": "Mixed 0s, 1s, 2s" },
+            { "input": "[2, 0, 1]", "expected": [0, 1, 2], "description": "One of each" },
+            { "input": "[0]", "expected": [0], "description": "Single element" },
+            { "input": "[1, 1, 1]", "expected": [1, 1, 1], "description": "All same" }
+          ]
+        }
+      ],
+      "Dynamic Programming": [
+        {
+          "id": "dp-1",
+          "title": "Fibonacci with Memoization",
+          "description": "Implement the Fibonacci sequence using dynamic programming with memoization to improve performance.",
+          "hint": "Store previously calculated values in a dictionary to avoid recalculating them.",
+          "starterCode": "def fibonacci_memo(n, memo=None):\n    if memo is None:\n        memo = {}\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "10", "expected": 55, "description": "10th Fibonacci number" },
+            { "input": "0", "expected": 0, "description": "0th Fibonacci number" },
+            { "input": "1", "expected": 1, "description": "1st Fibonacci number" },
+            { "input": "15", "expected": 610, "description": "15th Fibonacci number" }
+          ]
+        },
+        {
+          "id": "dp-2",
+          "title": "Climbing Stairs",
+          "description": "You're climbing stairs and can take either 1 or 2 steps at a time. How many distinct ways can you climb n stairs?",
+          "hint": "This is similar to Fibonacci. The number of ways to reach step n is the sum of ways to reach step n-1 and n-2.",
+          "starterCode": "def climb_stairs(n):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "2", "expected": 2, "description": "2 stairs: 1+1 or 2" },
+            { "input": "3", "expected": 3, "description": "3 stairs: 1+1+1, 1+2, or 2+1" },
+            { "input": "4", "expected": 5, "description": "4 stairs: 5 different ways" },
+            { "input": "1", "expected": 1, "description": "1 stair: only one way" }
+          ]
+        },
+        {
+          "id": "dp-3",
+          "title": "Coin Change",
+          "description": "Given coins of different denominations and a total amount, find the minimum number of coins needed to make that amount.",
+          "hint": "Use dynamic programming. For each amount, try each coin and take the minimum.",
+          "starterCode": "def coin_change(coins, amount):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "[1, 3, 4], 6", "expected": 2, "description": "6 = 3 + 3" },
+            { "input": "[2], 3", "expected": -1, "description": "Cannot make 3 with only 2s" },
+            { "input": "[1, 2, 5], 11", "expected": 3, "description": "11 = 5 + 5 + 1" },
+            { "input": "[1], 0", "expected": 0, "description": "Amount 0 needs 0 coins" }
+          ]
+        },
+        {
+          "id": "dp-4",
+          "title": "Longest Common Subsequence",
+          "description": "Find the length of the longest common subsequence between two strings.",
+          "hint": "Use a 2D array to store results. If characters match, add 1 to diagonal. Otherwise, take max of left or top.",
+          "starterCode": "def longest_common_subsequence(text1, text2):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "'abcde', 'ace'", "expected": 3, "description": "LCS is 'ace'" },
+            { "input": "'abc', 'abc'", "expected": 3, "description": "Identical strings" },
+            { "input": "'abc', 'def'", "expected": 0, "description": "No common subsequence" },
+            { "input": "'', 'abc'", "expected": 0, "description": "Empty string" }
+          ]
+        },
+        {
+          "id": "dp-5",
+          "title": "House Robber",
+          "description": "You're a robber planning to rob houses on a street. Adjacent houses have security systems. What's the maximum amount you can rob without alerting police?",
+          "hint": "At each house, decide whether to rob it (can't rob adjacent) or skip it. Use DP to track max money at each position.",
+          "starterCode": "def rob(nums):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "[1, 2, 3, 1]", "expected": 4, "description": "Rob house 0 and 2: 1 + 3 = 4" },
+            { "input": "[2, 7, 9, 3, 1]", "expected": 12, "description": "Rob house 0, 2, and 4: 2 + 9 + 1 = 12" },
+            { "input": "[5]", "expected": 5, "description": "Single house" },
+            { "input": "[2, 1, 1, 2]", "expected": 4, "description": "Rob house 0 and 3: 2 + 2 = 4" }
+          ]
+        },
+        {
+          "id": "dp-6",
+          "title": "Edit Distance",
+          "description": "Find the minimum number of operations (insert, delete, replace) to convert one string to another.",
+          "hint": "Use 2D DP table. If characters match, take diagonal value. Otherwise, take minimum of three operations + 1.",
+          "starterCode": "def edit_distance(word1, word2):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "'horse', 'ros'", "expected": 3, "description": "horse -> rorse -> rose -> ros" },
+            { "input": "'intention', 'execution'", "expected": 5, "description": "5 operations needed" },
+            { "input": "'', 'abc'", "expected": 3, "description": "Insert 3 characters" },
+            { "input": "'abc', ''", "expected": 3, "description": "Delete 3 characters" }
+          ]
+        },
+        {
+          "id": "dp-7",
+          "title": "Knapsack Problem",
+          "description": "Given items with weights and values, and a knapsack capacity, find the maximum value that can be obtained.",
+          "hint": "Use 2D DP table where dp[i][w] represents max value using first i items with weight limit w.",
+          "starterCode": "def knapsack(weights, values, capacity):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "[1, 3, 4, 5], [1, 4, 5, 7], 7", "expected": 9, "description": "Items with weights [3,4] and values [4,5]" },
+            { "input": "[2, 1, 3], [3, 2, 4], 4", "expected": 6, "description": "Items with weights [1,3] and values [2,4]" },
+            { "input": "[1], [1], 1", "expected": 1, "description": "Single item fits" },
+            { "input": "[2], [1], 1", "expected": 0, "description": "Single item doesn't fit" }
+          ]
+        },
+        {
+          "id": "dp-8",
+          "title": "Palindrome Partitioning",
+          "description": "Find the minimum number of cuts needed to partition a string such that every substring is a palindrome.",
+          "hint": "Use DP to find minimum cuts. First precompute which substrings are palindromes.",
+          "starterCode": "def min_palindrome_cuts(s):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "'aab'", "expected": 1, "description": "Cut between 'aa' and 'b'" },
+            { "input": "'raceacar'", "expected": 3, "description": "Multiple cuts needed" },
+            { "input": "'abcba'", "expected": 0, "description": "Already a palindrome" },
+            { "input": "'a'", "expected": 0, "description": "Single character" }
+          ]
+        }
+      ],
+      "Graph Algorithms": [
+        {
+          "id": "graph-1",
+          "title": "Depth-First Search",
+          "description": "Implement depth-first search (DFS) for a graph represented as an adjacency list.",
+          "hint": "Use recursion or a stack. Mark visited nodes to avoid cycles.",
+          "starterCode": "def dfs(graph, start, visited=None):\n    if visited is None:\n        visited = set()\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "{'A': ['B', 'C'], 'B': ['D'], 'C': ['E'], 'D': [], 'E': []}, 'A'", "expected": ["A", "B", "D", "C", "E"], "description": "Simple graph traversal" }
+          ]
+        },
+        {
+          "id": "graph-2",
+          "title": "Breadth-First Search",
+          "description": "Implement breadth-first search (BFS) for a graph represented as an adjacency list.",
+          "hint": "Use a queue to process nodes level by level. Mark visited nodes to avoid cycles.",
+          "starterCode": "from collections import deque\n\ndef bfs(graph, start):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "{'A': ['B', 'C'], 'B': ['D'], 'C': ['E'], 'D': [], 'E': []}, 'A'", "expected": ["A", "B", "C", "D", "E"], "description": "Level-order traversal" }
+          ]
+        },
+        {
+          "id": "graph-3",
+          "title": "Find Path Between Nodes",
+          "description": "Find if there's a path between two nodes in a graph using BFS.",
+          "hint": "Use BFS and check if you can reach the target node from the start node.",
+          "starterCode": "from collections import deque\n\ndef has_path(graph, start, target):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "{'A': ['B'], 'B': ['C'], 'C': []}, 'A', 'C'", "expected": true, "description": "Path exists A->B->C" },
+            { "input": "{'A': ['B'], 'B': [], 'C': []}, 'A', 'C'", "expected": false, "description": "No path from A to C" },
+            { "input": "{'A': ['A']}, 'A', 'A'", "expected": true, "description": "Self loop" }
+          ]
+        },
+        {
+          "id": "graph-4",
+          "title": "Shortest Path Length",
+          "description": "Find the shortest path length between two nodes in an unweighted graph.",
+          "hint": "Use BFS and keep track of the distance/level for each node.",
+          "starterCode": "from collections import deque\n\ndef shortest_path(graph, start, target):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "{'A': ['B', 'C'], 'B': ['D'], 'C': ['D'], 'D': []}, 'A', 'D'", "expected": 2, "description": "Shortest path A->B->D or A->C->D" },
+            { "input": "{'A': ['B'], 'B': ['C'], 'C': []}, 'A', 'C'", "expected": 2, "description": "Path A->B->C" },
+            { "input": "{'A': [], 'B': []}, 'A', 'B'", "expected": -1, "description": "No path exists" }
+          ]
+        },
+        {
+          "id": "graph-5",
+          "title": "Detect Cycle in Directed Graph",
+          "description": "Detect if there's a cycle in a directed graph using DFS.",
+          "hint": "Use three colors: white (unvisited), gray (visiting), black (visited). A cycle exists if we encounter a gray node.",
+          "starterCode": "def has_cycle_directed(graph):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "{'A': ['B'], 'B': ['C'], 'C': ['A']}", "expected": true, "description": "Cycle: A->B->C->A" },
+            { "input": "{'A': ['B'], 'B': ['C'], 'C': []}", "expected": false, "description": "No cycle" },
+            { "input": "{'A': ['A']}", "expected": true, "description": "Self loop" },
+            { "input": "{}", "expected": false, "description": "Empty graph" }
+          ]
+        },
+        {
+          "id": "graph-6",
+          "title": "Topological Sort",
+          "description": "Perform topological sorting on a directed acyclic graph (DAG).",
+          "hint": "Use DFS and add nodes to result in reverse order of finishing times, or use Kahn's algorithm with in-degrees.",
+          "starterCode": "def topological_sort(graph):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "{'A': ['C'], 'B': ['C', 'D'], 'C': ['E'], 'D': ['F'], 'E': ['F'], 'F': []}", "expected": ["A", "B", "C", "D", "E", "F"], "description": "One valid topological order" }
+          ]
+        }
+      ],
+      "String Algorithms": [
+        {
+          "id": "str-alg-1",
+          "title": "Longest Palindromic Substring",
+          "description": "Find the longest palindromic substring in a given string.",
+          "hint": "For each character, expand around it to find the longest palindrome centered at that position. Consider both odd and even length palindromes.",
+          "starterCode": "def longest_palindrome(s):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "'babad'", "expected": "bab", "description": "Either 'bab' or 'aba'" },
+            { "input": "'cbbd'", "expected": "bb", "description": "Longest palindrome is 'bb'" },
+            { "input": "'a'", "expected": "a", "description": "Single character" },
+            { "input": "'ac'", "expected": "a", "description": "No palindrome longer than 1" }
+          ]
+        },
+        {
+          "id": "str-alg-2",
+          "title": "Valid Anagram",
+          "description": "Check if two strings are anagrams of each other (contain the same characters with the same frequency).",
+          "hint": "Count the frequency of each character in both strings and compare, or sort both strings and compare.",
+          "starterCode": "def is_anagram(s, t):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "'anagram', 'nagaram'", "expected": true, "description": "Valid anagram" },
+            { "input": "'rat', 'car'", "expected": false, "description": "Not an anagram" },
+            { "input": "'listen', 'silent'", "expected": true, "description": "Another valid anagram" },
+            { "input": "'a', 'ab'", "expected": false, "description": "Different lengths" }
+          ]
+        },
+        {
+          "id": "str-alg-3",
+          "title": "String Compression",
+          "description": "Compress a string by replacing repeated characters with the character followed by the count.",
+          "hint": "Iterate through the string and count consecutive characters. Add character and count to result.",
+          "starterCode": "def compress_string(s):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "'aabcccccaaa'", "expected": "a2b1c5a3", "description": "Compress repeated characters" },
+            { "input": "'abcdef'", "expected": "a1b1c1d1e1f1", "description": "No repeated characters" },
+            { "input": "'aaa'", "expected": "a3", "description": "All same character" },
+            { "input": "''", "expected": "", "description": "Empty string" }
+          ]
+        },
+        {
+          "id": "str-alg-4",
+          "title": "Longest Substring Without Repeating Characters",
+          "description": "Find the length of the longest substring without repeating characters.",
+          "hint": "Use sliding window technique with two pointers and a set to track characters in current window.",
+          "starterCode": "def length_of_longest_substring(s):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "'abcabcbb'", "expected": 3, "description": "Longest is 'abc'" },
+            { "input": "'bbbbb'", "expected": 1, "description": "All same character" },
+            { "input": "'pwwkew'", "expected": 3, "description": "Longest is 'wke'" },
+            { "input": "''", "expected": 0, "description": "Empty string" }
+          ]
+        },
+        {
+          "id": "str-alg-5",
+          "title": "Valid Parentheses",
+          "description": "Given a string containing parentheses '()', brackets '[]', and braces '{}', determine if the input string is valid.",
+          "hint": "Use a stack to track opening brackets. When you see a closing bracket, check if it matches the most recent opening bracket.",
+          "starterCode": "def is_valid_parentheses(s):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "'()'", "expected": true, "description": "Simple valid parentheses" },
+            { "input": "'()[]{}'", "expected": true, "description": "Multiple types valid" },
+            { "input": "'(]'", "expected": false, "description": "Mismatched brackets" },
+            { "input": "'([)]'", "expected": false, "description": "Wrong order" },
+            { "input": "'{[]}'", "expected": true, "description": "Nested brackets" }
+          ]
+        },
+        {
+          "id": "str-alg-6",
+          "title": "KMP String Matching",
+          "description": "Implement the Knuth-Morris-Pratt (KMP) algorithm to find all occurrences of a pattern in a text.",
+          "hint": "Build a failure function (LPS array) for the pattern, then use it to efficiently search the text.",
+          "starterCode": "def kmp_search(text, pattern):\n    # Your code here\n    # Return list of starting indices where pattern is found\n\n",
+          "testCases": [
+            { "input": "'ababcababa', 'ababa'", "expected": [5], "description": "Pattern found at index 5" },
+            { "input": "'aabaacaadaabaaba', 'aaba'", "expected": [0, 9, 12], "description": "Multiple occurrences" },
+            { "input": "'hello', 'world'", "expected": [], "description": "Pattern not found" },
+            { "input": "'abcdef', 'abc'", "expected": [0], "description": "Pattern at beginning" }
+          ]
+        },
+        {
+          "id": "str-alg-7",
+          "title": "Minimum Window Substring",
+          "description": "Find the minimum window substring that contains all characters of a given pattern.",
+          "hint": "Use sliding window with two pointers. Expand right until all characters are included, then contract left while maintaining validity.",
+          "starterCode": "def min_window_substring(s, t):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "'ADOBECODEBANC', 'ABC'", "expected": "BANC", "description": "Minimum window containing A, B, C" },
+            { "input": "'a', 'a'", "expected": "a", "description": "Single character match" },
+            { "input": "'a', 'aa'", "expected": "", "description": "Not enough characters" },
+            { "input": "'ab', 'b'", "expected": "b", "description": "Pattern is single character" }
+          ]
+        },
+        {
+          "id": "str-alg-8",
+          "title": "Rabin-Karp String Matching",
+          "description": "Implement the Rabin-Karp algorithm for string matching using rolling hash.",
+          "hint": "Use polynomial rolling hash. Calculate hash for pattern and first window, then roll the hash for subsequent windows.",
+          "starterCode": "def rabin_karp_search(text, pattern):\n    # Your code here\n    # Return list of starting indices where pattern is found\n\n",
+          "testCases": [
+            { "input": "'abcdefg', 'cde'", "expected": [2], "description": "Pattern found at index 2" },
+            { "input": "'aabaacaadaabaaba', 'aaba'", "expected": [0, 9, 12], "description": "Multiple occurrences" },
+            { "input": "'hello', 'world'", "expected": [], "description": "Pattern not found" },
+            { "input": "'abcabc', 'abc'", "expected": [0, 3], "description": "Overlapping patterns" }
+          ]
+        }
+      ],
+      "Tree Algorithms": [
+        {
+          "id": "tree-1",
+          "title": "Binary Tree Traversal",
+          "description": "Implement inorder, preorder, and postorder traversal of a binary tree.",
+          "hint": "Use recursion. Inorder: left, root, right. Preorder: root, left, right. Postorder: left, right, root.",
+          "starterCode": "class TreeNode:\n    def __init__(self, val=0, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\n\ndef inorder_traversal(root):\n    # Your code here\n\n\n\ndef preorder_traversal(root):\n    # Your code here\n\n\n\ndef postorder_traversal(root):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "TreeNode(1, null, TreeNode(2, TreeNode(3)))", "expected": {"inorder": [1, 3, 2], "preorder": [1, 2, 3], "postorder": [3, 2, 1]}, "description": "Simple binary tree" }
+          ]
+        },
+        {
+          "id": "tree-2",
+          "title": "Binary Search Tree Validation",
+          "description": "Validate if a binary tree is a valid binary search tree.",
+          "hint": "Use recursion with min and max bounds. For each node, check if it's within bounds and recursively validate subtrees.",
+          "starterCode": "def is_valid_bst(root):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "TreeNode(2, TreeNode(1), TreeNode(3))", "expected": true, "description": "Valid BST" },
+            { "input": "TreeNode(5, TreeNode(1), TreeNode(4, TreeNode(3), TreeNode(6)))", "expected": false, "description": "Invalid BST" }
+          ]
+        },
+        {
+          "id": "tree-3",
+          "title": "Lowest Common Ancestor",
+          "description": "Find the lowest common ancestor of two nodes in a binary tree.",
+          "hint": "Use recursion. If current node is one of the targets, return it. If both subtrees return non-null, current node is LCA.",
+          "starterCode": "def lowest_common_ancestor(root, p, q):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "TreeNode(3, TreeNode(5, TreeNode(6), TreeNode(2, TreeNode(7), TreeNode(4))), TreeNode(1, TreeNode(0), TreeNode(8))), TreeNode(5), TreeNode(1)", "expected": "TreeNode(3)", "description": "LCA of 5 and 1 is 3" }
+          ]
+        },
+        {
+          "id": "tree-4",
+          "title": "Binary Tree Level Order Traversal",
+          "description": "Return the level order traversal of a binary tree (breadth-first search).",
+          "hint": "Use a queue to process nodes level by level. Keep track of the current level size.",
+          "starterCode": "from collections import deque\n\ndef level_order_traversal(root):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "TreeNode(3, TreeNode(9), TreeNode(20, TreeNode(15), TreeNode(7)))", "expected": [[3], [9, 20], [15, 7]], "description": "Level order traversal" }
+          ]
+        },
+        {
+          "id": "tree-5",
+          "title": "Binary Tree Maximum Path Sum",
+          "description": "Find the maximum path sum in a binary tree. A path can start and end at any nodes.",
+          "hint": "Use recursion. For each node, calculate max path sum through that node and update global maximum.",
+          "starterCode": "def max_path_sum(root):\n    # Your code here\n\n",
+          "testCases": [
+            { "input": "TreeNode(1, TreeNode(2), TreeNode(3))", "expected": 6, "description": "Path: 2 -> 1 -> 3" },
+            { "input": "TreeNode(-10, TreeNode(9), TreeNode(20, TreeNode(15), TreeNode(7)))", "expected": 42, "description": "Path: 15 -> 20 -> 7" }
+          ]
+        }
+      ]
+    }
+  }
+}

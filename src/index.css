@@ -1,0 +1,211 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hide scrollbar for sidebar while maintaining scroll functionality */
+.sidebar-scrollable {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.sidebar-scrollable::-webkit-scrollbar {
+  display: none; /* WebKit */
+}
+
+/* Modal overlay that covers entire viewport */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+}
+
+/* Sidebar animations */
+.sidebar-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.sidebar-enter-right {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.sidebar-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
+
+.sidebar-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.sidebar-exit-left {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
+
+.sidebar-exit-right {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
+
+/* Backdrop animations */
+.backdrop-enter {
+  opacity: 0;
+}
+
+.backdrop-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in-out;
+}
+
+.backdrop-exit {
+  opacity: 1;
+}
+
+.backdrop-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+/* Smooth sidebar animation utility classes */
+.animate-slide-in-left {
+  animation: slideInLeft 300ms ease-in-out;
+}
+
+.animate-slide-out-left {
+  animation: slideOutLeft 300ms ease-in-out;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 300ms ease-in-out;
+}
+
+.animate-slide-out-right {
+  animation: slideOutRight 300ms ease-in-out;
+}
+
+.animate-fade-in {
+  animation: fadeIn 300ms ease-in-out;
+}
+
+.animate-fade-out {
+  animation: fadeOut 300ms ease-in-out;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutLeft {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* CodeMirror mobile optimizations */
+.cm-editor {
+  font-size: 16px !important;
+  line-height: 1.4 !important;
+}
+
+.cm-editor .cm-content {
+  padding: 8px !important;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace !important;
+}
+
+.cm-editor .cm-focused {
+  outline: none !important;
+}
+
+.cm-editor .cm-scroller {
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace !important;
+}
+
+/* Better touch targets on mobile */
+@media (max-width: 1024px) and (pointer: coarse) {
+  .cm-editor .cm-content {
+    padding: 12px !important;
+    min-height: 300px !important;
+  }
+  
+  .cm-editor {
+    font-size: 14px !important; /* Prevents zoom on iOS */
+    line-height: 1.5 !important;
+  }
+}
+
+/* Tooltip z-index fix - ensure tooltips appear above all content */
+div[data-tooltip-id] {
+  z-index: 99999 !important;
+}
+
+[role="tooltip"] {
+  z-index: 99999 !important;
+}
+
+.react-tooltip {
+  z-index: 99999 !important;
+}
