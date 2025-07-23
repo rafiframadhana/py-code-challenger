@@ -23,24 +23,24 @@ export default function LevelSelectionModal({ isOpen, onClose, onLevelSelect, is
   const levels: Level[] = [
     {
       name: 'Beginner',
-      description: 'Start with fundamental concepts and basic programming skills',
+      description: 'Master Python fundamentals with hands-on practice',
       icon: Target,
       color: 'green' as ColorName,
-      features: ['Array Manipulation', 'Basic Loops', 'Simple Functions', 'String Operations']
+      features: ['Lists & Arrays', 'For/While Loops', 'String Manipulation', 'Basic Math Functions']
     },
     {
       name: 'Intermediate',
-      description: 'Build on your knowledge with more complex challenges',
+      description: 'Explore advanced data structures and programming concepts',
       icon: Star,
       color: 'blue' as ColorName,
-      features: ['Object Manipulation', 'Advanced Functions', 'Problem Solving', 'Algorithm Basics']
+      features: ['Dictionaries & Maps', 'Recursion', 'List Comprehensions', 'Regular Expressions']
     },
     {
       name: 'Advanced',
-      description: 'Master complex algorithms and advanced programming techniques',
+      description: 'Tackle complex algorithms and computer science fundamentals',
       icon: Crown,
       color: 'purple' as ColorName,
-      features: ['Complex Algorithms', 'Optimization', 'Data Structures', 'Advanced Patterns']
+      features: ['Sorting Algorithms', 'Dynamic Programming', 'Graph Algorithms', 'Tree Structures']
     }
   ];
 
